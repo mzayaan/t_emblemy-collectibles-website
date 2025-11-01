@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart - T_Emblemy Collectible Books</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"/>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="T_Emblemy Collectible Books Logo" id="logo" />
+            <h1>Cart</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="19th-century.html">19th Century Books</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="delivery.html">Delivery</a></li>
+                <li>
+                    <a href="cart.html"><i class="bi bi-cart"></i>(<span id="cart-count">0</span>)</a>
+                </li>
+                <li><a href="wishlist.html"><i class="bi bi-heart"></i> (<span id="wishlist-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <div id="cart">
+        <h1>Your Cart</h1>
+        <ul id="cart-items"></ul> 
+        <!-- List of added books -->
+        <p id="total-price"><strong>Total:</strong> £0.00</p>
+
+        <label for="region"><strong>Select Region for Shipping:</strong></label>
+        <select id="region">
+            <option value="0">Select</option>
+            <option value="5">UK (£5)</option>
+            <option value="10">Europe (£10)</option>
+            <option value="15">United States/Canada (£15)</option>
+            <option value="20">Rest of the World (£20)</option>
+        </select>
+
+        <p id="shipping-fee"><strong>Shipping Fee:</strong> £0.00</p>
+        <p id="grand-total"><strong>Grand Total:</strong> £0.00</p>
+
+        <label for="payment-method"><strong>Select Payment Method:</strong></label>
+        <select id="payment-method">
+            <option value="">Select</option>
+            <option value="Credit Card">Credit Card</option>
+            <option value="Debit Card">Debit Card</option>
+            <option value="PayPal">PayPal</option>
+        </select>
+
+        <!-- 🔹 Changed id from `checkout-button` to `checkoutBtn` -->
+        <button id="checkoutBtn" class="checkout-btn">
+            Proceed to Checkout
+        </button>
+    </div>
+
+    <div id="order-summary"></div> 
+    <!-- Order Summary will appear here -->
+
+    <footer>
+        <p>&copy; 2025 T_Emblemy Collectible Books. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>

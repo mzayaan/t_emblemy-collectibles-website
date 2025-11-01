@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - T_Emblemy Collectible Books</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="./js/script.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="images/logo.png" alt="T_Emblemy Collectible Books Logo" id="logo" />
+      <h1 class="welcome-message"> Welcome to T_Emblemy Collectible Books</h1>
+    </div>
+  
+      <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="19th-century.html">19th Century Books</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="delivery.html">Delivery</a></li>
+        <li><a href="cart.html"><i class="bi bi-cart"></i> (<span id="cart-count">0</span>)</a></li>
+        <li><a href="wishlist.html"><i class="bi bi-heart"></i> (<span id="wishlist-count">0</span>)</a></li>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Search Section -->
+    <section class="search-section">
+      <input type="text" id="searchBar" placeholder="Search for books, authors, or genres..." />
+      <button id="searchBtn">
+        <i class="bi bi-search"></i>
+      </button>
+      <div id="searchResults"></div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Explore Our World of Classic Literature</h2>
+        <p>
+          Discover timeless stories and rare collectible books that transport
+          you to different eras and worlds.
+        </p>
+        <a href="books.html" class="btn-primary">Browse Collection</a>
+      </div>
+    </section>
+
+    <!-- Intro Video Section -->
+    <section class="intro-video">
+      <video controls>
+        <source src="videos/intro.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Package Section -->
+    <section class="packages">
+      <h2>Packages</h2>
+      <div class="package-list">
+        <!-- Package 1 -->
+        <div class="package-item">
+          <h3>Book Starter Pack</h3>
+          <p>Timeless classics to get you started.</p>
+          <p><strong>Price:</strong> £ 6 <b>-</b> 11</p>
+        </div>
+        <!-- Package 2 -->
+        <div class="package-item">
+          <h3>19th-Century Favorites</h3>
+          <p>Curated collection of 19th-century novels.</p>
+          <p><strong>Price:</strong> £ 8 <b>-</b> 16</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Books Section in Hero -->
+    <div class="featured-heading-container">
+      <h1 class="featured-heading">Featured Books</h1>
+    </div>
+    <div class="hero-books">
+      <div class="book-item">
+        <img src="images/atonement.jpg" alt="Book 1 Cover" class="book-cover" />
+        <div class="book-info">
+          <h2>Atonement</h2>
+          <p>By Ian McEwan</p>
+        </div>
+      </div>
+      <div class="book-item">
+        <img src="images/pride_and_prejudice.jpg" alt="Book 2 Cover" class="book-cover" />
+        <div class="book-info">
+          <h2>Pride and Prejudice</h2>
+          <p>By Jane Austen</p>
+        </div>
+      </div>
+      <div class="book-item">
+        <img src="images/moby_dick.jpg" alt="Book 3 Cover" class="book-cover" />
+        <div class="book-info">
+          <h2>Moby-Dick</h2>
+          <p>By Herman Melville</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 T_Emblemy Collectible Books. All Rights Reserved.</p>
+    <div class="social-icons">
+      <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" title="Go to top">&#8593;</button>
+</body>
+
+</html>
